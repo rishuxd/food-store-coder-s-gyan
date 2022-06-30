@@ -1,0 +1,103 @@
+/* importing fonts */
+@font-face {
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Raleway-Black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+/* importing colours */
+:root{
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --danger: #FE4545;
+    --pure: #FEFEFE;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --footer: #2D333F;
+    
+}
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    webkit-font-smoothing: antialised;
+}
+
+.container{
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+/* media quries */
+@media(min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media(min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media(min-width:1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+header.topbar{
+    background: var(--secondary);
+    color: var(--pure);
+}
+header.topbar .auth > div a{
+    color: var(--pure);
+    text-decoration: none;
+    font-family: "Raleway-SemiBold";
+}
+
+/* creating utility classes */
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.item-center{
+    align-items: center;
+}
+header.topbar .icons a{
+    margin-right: 0.6rem;
+}
+header.topbar .auth .divider{
+    padding: 0 1rem;
+}
+header.topbar .auth > div img{
+    margin-right: 0.35rem;
+}
