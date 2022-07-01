@@ -167,7 +167,7 @@
 
 /* styling */
 body {
-    webkit-font-smoothing: antialised;
+    -webkit-font-smoothing: antialised;
     height: 4000px;
     font-family: "Raleway-Regular";
 }
