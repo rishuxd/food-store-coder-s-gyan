@@ -67,6 +67,11 @@
 }
 
 /* creating utility classes */
+.container {
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}
 .flex{
     display: flex;
 }
@@ -164,18 +169,17 @@
 .text-primary {
     color: var(--primary);
 }
+.text-pure{
+    color: var(--heaven);
+}
+.flex-1 {
+    flex: 1;
+}
 
 /* styling */
 body {
     -webkit-font-smoothing: antialised;
-    height: 4000px;
     font-family: "Raleway-Regular";
-}
-
-.container {
-    width: 100%;
-    padding: 15px;
-    margin: 0 auto;
 }
 
 header.topbar {
@@ -371,9 +375,6 @@ section.top-products .slider{
 section.about-meal img{
     width: 85%;
 }
-.flex-1{
-    flex: 1;
-}
 section.about-meal h2{
     font-family: "Raleway-Bold";
     font-size: 1.4rem;
@@ -417,4 +418,222 @@ section.our-services .service-card h2{
 section.our-services .service-card p{
     line-height: 1.6;
     margin-bottom: 1rem;
+}
+
+section.big-deal{
+    background: linear-gradient(
+        rgba(35,43,56,0.9),
+        rgba(35,43,56,0.9)
+    ), url(../images/food-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+section.big-deal .timer {
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+}
+section.big-deal .timer div{
+    margin: 2rem;
+    background: var(--primary);
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+section.big-deal .timer div span:first-child{
+    font-family: "Raleway-Semibold";
+    font-size: 2.5rem;
+    color: var(--heaven);
+    margin-bottom: 0.05rem;
+}
+section.big-deal .timer div span:last-child{
+    font-family: "Raleway-Medium";
+    color: var(--light);
+}
+section.latest-news{
+    background: var(--light);
+    position: relative;
+    z-index: 0;
+}
+section.latest-news .article-wrapper .card img{
+    width: 100%;
+}
+section.latest-news .article-wrapper .card{
+    margin-right: 2rem;
+    background: var(--heaven);
+    border-radius: 4px;
+}
+section.latest-news .article-wrapper{
+    padding: 0rem 4rem;
+    margin-right: -2rem;
+}
+section.latest-news .article-wrapper .card .card-content{
+    padding: 2rem;
+
+}
+section.latest-news .article-wrapper .card .card-content .post-meta{
+    margin-bottom: 1rem;
+}
+section.latest-news .article-wrapper .card .card-content .post-meta .cmnt{
+    margin-left: 1rem;
+}
+section.latest-news .article-wrapper .card .card-content h2{
+    font-family: "Raleway-Bold";
+    font-size: 1.3rem ;
+    margin-bottom: 1rem;
+}
+section.latest-news .article-wrapper .card .card-content p{
+    line-height: 1.6;
+}
+section.latest-news .btn-wrapper{
+    margin-top: 2rem;
+}
+section.subscribe .container > div:first-child img{
+    width: 90%;
+}
+section.subscribe{
+    background: var(--primary);
+}
+section.subscribe h1{
+    font-family: "Raleway-Bold";
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+section.subscribe p{
+    font-family: "Raleway-Medium";
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+section.subscribe .input-wrap{
+    background: var(--heaven);
+    display: flex;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+section.subscribe .input-wrap input{
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+section.subscribe .input-wrap input:focus{
+    outline: none;
+}
+section.subscribe .input-wrap button{
+    padding: 0.5rem 2rem;
+    border: none;
+    background: var(--primary);
+    color: var(--pure);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+section.subscribe .input-wrap button:hover{
+    background: var(--secondary);
+    outline: none;
+}
+section.contact-us{
+    padding-top:0;
+    padding-bottom:0;
+}
+section.contact-us .contact-info-wrapper{
+    padding: 4rem 0;
+    flex: 1;
+}
+section.contact-us .map{
+    flex: 1;
+    /* filter: grayscale(100%); */
+}
+section.contact-us .contact-info{
+    display: flex;
+    justify-content: center;
+}
+section.contact-us .contact-info >div >div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+section.contact-us .contact-info >div >div img{
+    margin-right: 1rem;
+}
+section.contact-us .contact-info >div >div >div{
+    display: flex;
+    flex-direction: column;
+}
+section.contact-us .contact-info >div >div >div span:first-child{
+    font-family: "Raleway-Bold";
+    margin-bottom: 0.25rem;
+}
+footer{
+    background: var(--footer);
+    padding: 4rem 0;
+}
+footer .container{
+    display: flex;
+    color: var(--pure);
+}
+footer .box1{
+    flex: 1;
+    margin-right: 2rem;
+    text-align: center;
+}
+footer .instagram-api img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer .instagram-api .post-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .instagram-api .post-wrapper > div{
+    width: calc(1/3*100% - (1 - 1/3)*10px);
+    margin-bottom: 10px;
+}
+footer .box1 ul{
+    list-style-type: none;
+}
+footer .box1 ul li a{
+    color: var(--pure);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+footer .box1 ul li a:hover{
+    color: var(--primary);
+}
+footer .box1 h3{
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+footer .box1 p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+footer .box1 ul li{
+    margin-bottom: 1rem;
+}
+
+footer .box1 ul li a img {
+    margin-right: 1rem;
+}
+footer.copyright{
+    padding: 1rem 0;
+    background: var(--secondary);
+    color: var(--pure);
+    text-align: center;
+    remfont-size: 
+}
+footer.copyright a{
+    color: var(--primary);
+    text-decoration: none;
 }
