@@ -342,6 +342,10 @@ section.top-products .food-slider .food-card button:hover{
 .slick-list {
     margin: 0 -27px;
 }
+.slick-slide img {
+    display: block;
+    margin-left: -0.1rem;
+}
 section.top-products .slider-btn{
     width: 30px;
     height: 30px;
@@ -357,13 +361,13 @@ section.top-products .slider{
 .next-btn{
     position: absolute;
     top: 46%;
-    left: -3rem;
+    right: -5rem;
     z-index: 1;
 }
 .prev-btn {
     position: absolute;
     top: 46%;
-    right: -3rem;
+    left: -5rem;
     z-index: 1;
 }
 .top-products .btn-wrapper{
