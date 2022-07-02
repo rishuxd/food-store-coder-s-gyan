@@ -623,15 +623,15 @@ footer .box1 ul li{
     margin-bottom: 1rem;
 }
 
-footer .box1 ul li a img {
+footer .box1 ul li a img{
     margin-right: 1rem;
 }
+
 footer.copyright{
     padding: 1rem 0;
     background: var(--secondary);
     color: var(--pure);
     text-align: center;
-    remfont-size: 
 }
 footer.copyright a{
     color: var(--primary);
